@@ -9,7 +9,7 @@ class CompleteButton extends Component {
   }
 
   handleClick() {
-    this.props.toggleFav(this.props.name)
+    // this.props.toggleFav(this.props.name)
   }
 
   render() {

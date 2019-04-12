@@ -10,7 +10,7 @@ render() {
     return (
       <div className="header">
          <h1>Made Fetch Happen</h1>
-          <h4> Flash Cards for Fetch/Networks/Servers </h4>
+          <h3> Fetch/Networks/Servers</h3>
       </div>);
     }
   

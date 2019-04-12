@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header.js'
 import Container from './Components/Container.js';
 import Card from './Components/Card.js';
-import './App.css';
+import './App.scss';
 
 
 export class App extends Component {
@@ -22,6 +22,7 @@ export class App extends Component {
         <div>
           <Header/>
           <Container/>
+          <hr/>
       </div>
       );
   }

@@ -1,4 +1,20 @@
-/*@import NavBar from './StyleSheets/NavBar.scss'*/
+@import './normalize.css';
+@import './Header.scss';
+@import './NavBar.scss';
+@import './Card.scss';
+@import './Container.scss';
 
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200');
+@import '../App.scss';
+
+
+body{
+  font-family: 'Oswald';
+  margin: 0px;
+  background-color: #2E6171;
+  text-align: center;
+
+}
 
 

@@ -14,10 +14,11 @@ class Container extends Component {
       <div className="container">
         <NavBar/>
         <Card
-          ID={card.ID}
-          Question = {card.Question}
-          Answer = {card.Answer}
-          Difficulty = {card.Difficulty}
+          // ID={card.ID}
+          // Question = {card.Question}
+          // Answer = {card.Answer}
+          // Difficulty = {card.Difficulty}
+          
               />
 
       </div>);
