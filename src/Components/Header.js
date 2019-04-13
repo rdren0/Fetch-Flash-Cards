@@ -9,7 +9,7 @@ class Header extends Component {
 render() {
     return (
       <div className="header">
-         <h1>Made Fetch Happen</h1>
+         <h1>Make Fetch Happen</h1>
           <h3> Fetch/Networks/Servers</h3>
       </div>);
     }

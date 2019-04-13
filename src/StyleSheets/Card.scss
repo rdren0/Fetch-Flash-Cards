@@ -1,0 +1,43 @@
+.card{
+  display: grid;
+  grid-template-rows: 3fr 2fr 40px;
+  padding: 8px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 265px;
+  max-height: 265px;
+  border-radius: 15px;
+  margin: 10px;
+  border: 2px solid black;
+  /*box-shadow: 4px 2px 31px -6px #556F7A;*/
+  background-color: #556F7A;
+}
+
+.card:hover{
+  /*box-shadow: 2px 7px 29px 1px #000000;*/
+}
+
+input{
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submit:hover{
+  background-color: #23ae87;
+}
+h2{
+  font-weight: 200;
+  font-size: 22px;
+}
+
+img{
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  widows: 50px;
+}
+
+.Answer{
+  font-weight: 600;
+  color: #23ae87;
+}
