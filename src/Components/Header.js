@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
-  constructor(props){
-    super(props);
-    this.state = {}
-  }
-
-render() {
+function Header(props) {
     return (
       <div className="header">
-         <h1>Made Fetch Happen</h1>
-          <h4> Flash Cards for Fetch/Networks/Servers </h4>
+         <h1>Make Fetch Happen</h1>
+          <h3> Fetch/Networks/Servers</h3>
       </div>);
     }
   
-}
 
 
 export default Header;
