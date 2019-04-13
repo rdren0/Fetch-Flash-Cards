@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Header from './Components/Header.js'
 import Container from './Components/Container.js';
 import Card from './Components/Card.js';
-import data from './data.js'
-
+import data from './data.js';
+import loading from './Images/loading.svg';
 import './App.scss';
 
 
@@ -13,14 +13,16 @@ export class App extends Component {
     this.state = {
       questions: data.flashCards,
       completed: [],
-      selection: []
+      selection: [],
+      loading: true
     }
   }
+
 
   showAll = () =>{
     let allCards = this.state.questions.filter(card =>{
       return (!this.state.completed.includes(card.ID))
-    })
+    }).sort(() => Math.random() - 0.5);
     this.setState({
       selection: allCards
     });    
@@ -47,12 +49,11 @@ export class App extends Component {
   }
 
 
-  addCompleted = (ID) => {
+  addCompleted = (ID, status) => {
     let newState;
-    if (this.state.completed.includes(ID)) {
+    if (this.state.completed.includes(ID) && status === false) {
       newState = this.state.completed.filter(card => card !== ID);
-    } else {
-      console.log(ID)
+    } else{
       newState = [...this.state.completed, ID];
     }
     this.setState({
@@ -60,13 +61,11 @@ export class App extends Component {
     }, () => {
       this.saveToStorage();
     });
-    console.log("completed in app:", this.state.completed)
   }
 
 
   saveToStorage = () => {
     localStorage.setItem('Completed', JSON.stringify(this.state.completed));
-    console.log(this.state.completed)
   }
 
 
@@ -74,12 +73,23 @@ export class App extends Component {
     const completedCards = JSON.parse(localStorage.getItem('Completed')) || [];
       this.setState({
         completed: completedCards,
-      });
-      console.log(data.flashCards)
+        loading: false
 
+      });
   }
   
   render() {
+     if(this.state.loading){
+      return(
+        <div>
+        <img className="App-loading" src={loading} alt="loading-icon" />
+          <p>
+            Loading flashCards...          
+          </p>
+        </div>
+
+      )
+    }else{
       return(
         <div>
           <Header/>
@@ -98,6 +108,7 @@ export class App extends Component {
           />
       </div>
       );
+    }
   }
 
 }

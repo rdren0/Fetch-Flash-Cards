@@ -6,7 +6,15 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.App-loading{
+  animation: App-loading-spin infinite 10s linear;
+  height: 40vmin;
+  pointer-events: none;
+  margin-top: 50px;
+
+}
+
+@keyframes App-loading-spin {
   from {
     transform: rotate(0deg);
   }
@@ -15,34 +23,33 @@
   }
 }
 
-
-
-
 hr{
   border: 1.5px solid black;
   margin-bottom: 0px;
+  margin-top: 20px;
 }
 
-
 .button-holder{
+  display: inline-block;
   text-align: center;
-  width: 550px;
   border-radius: 15px;
   margin-right: auto;
   margin-left: auto;
   background-color: #556F7A;
-  height: 60px;
+  /*height: 60px;*/
+  margin-bottom: 10px;
 }
 
 button{
   height: 45px;
   width: 90px;
+  border: 2px solid black;
   border-radius: 15px;
   margin: 8px;
   background-color: #DD7373;
   color: black;
-  border: 2px solid black;
 }
+
 button:hover{
   background-color: #E5C3D1;
   cursor: pointer;
@@ -50,4 +57,12 @@ button:hover{
 
 .completed-button{
  background-color: #87B38D
+}
+
+.completed-button:hover{
+  background-color: #23ae87;
+}
+
+.bulb{
+  height: 150px;
 }

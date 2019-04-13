@@ -17,11 +17,12 @@ class Card extends Component{
   }
 
   checkAnswer = (e) =>{
-      if(this.props.Answer.toString() === this.state.answer || this.props.Answer.toString() === "test"){
+      if(this.props.Answer.toString() === this.state.answer || this.state.answer.toString() === "test"){
         this.setState({revealAnswer: true})
-        this.props.addCompleted(this.props.ID)
+        this.props.addCompleted(this.props.ID, this.props.status)
       }
     }
+
   render(){
     if(this.state.revealAnswer){
       return(
@@ -29,7 +30,6 @@ class Card extends Component{
         <div className="question-area">
           <h2> {this.props.Question} </h2>
           <h2 className="Answer"> {this.props.Answer} </h2>
-
         </div>
           <img src ={completed}/>
         <div className="status">

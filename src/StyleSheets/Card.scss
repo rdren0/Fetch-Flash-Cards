@@ -9,12 +9,15 @@
   border-radius: 15px;
   margin: 10px;
   border: 2px solid black;
-  /*box-shadow: 4px 2px 31px -6px #556F7A;*/
+  box-shadow: 4px 2px 31px -6px #556F7A;
   background-color: #556F7A;
+
 }
 
 .card:hover{
-  /*box-shadow: 2px 7px 29px 1px #000000;*/
+  box-shadow: 2px 7px 29px 1px #000000;
+  background-color: lighten(#556F7A, 15%);
+
 }
 
 input{
@@ -29,6 +32,9 @@ h2{
   font-weight: 200;
   font-size: 22px;
 }
+h6{
+  font-weight: 300;
+}
 
 img{
   margin-right: auto;
@@ -39,5 +45,5 @@ img{
 
 .Answer{
   font-weight: 600;
-  color: #23ae87;
+  color: #FFF;
 }

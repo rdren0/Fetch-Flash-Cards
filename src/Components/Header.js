@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
-  constructor(props){
-    super(props);
-    this.state = {}
-  }
-
-render() {
+function Header(props) {
     return (
       <div className="header">
          <h1>Make Fetch Happen</h1>
@@ -14,7 +8,6 @@ render() {
       </div>);
     }
   
-}
 
 
 export default Header;
