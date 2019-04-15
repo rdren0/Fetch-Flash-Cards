@@ -5,12 +5,14 @@ import PlaceHolder from './PlaceHolder';
 class Container extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
     let completionStatus;
     let cards;
+    // if(this.props.completed.length ==5){
+    //   cards = <iframe src="https://giphy.com/embed/xlYKItjhiDsY" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    // }else{
     if(this.props.data.length){
     cards = this.props.data.map(card =>{
       if(this.props.completed.includes(card.ID)){
@@ -20,6 +22,7 @@ class Container extends Component {
       }
 
     return <Card
+      key = {card.ID}
       ID={card.ID}
       Question = {card.Question}
       Answer = {card.Answer}
@@ -38,9 +41,9 @@ class Container extends Component {
         {cards}
       </div>
     )
-  }  
+  }
+// }  
 }
-      // cards = <iframe src="https://giphy.com/embed/xlYKItjhiDsY" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 
 export default Container;

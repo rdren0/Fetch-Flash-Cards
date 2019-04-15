@@ -24,6 +24,20 @@ class Card extends Component{
     }
 
   render(){
+    if(this.props.status === true){
+      return(
+        <div className="card">
+        <div className="question-area">
+          <h2> {this.props.Question} </h2>
+          <h2 className="Answer"> {this.props.Answer} </h2>
+        </div>
+          <img src ={completed} alt="Green check mark for completion"/>
+        <div className="status">
+          <h6> {this.props.Difficulty} </h6>
+        </div>
+      </div>
+        )
+    }
     if(this.state.revealAnswer){
       return(
         <div className="card">
@@ -31,7 +45,7 @@ class Card extends Component{
           <h2> {this.props.Question} </h2>
           <h2 className="Answer"> {this.props.Answer} </h2>
         </div>
-          <img src ={completed}/>
+          <img src ={completed} alt="Green check mark for completion"/>
         <div className="status">
           <h6> {this.props.Difficulty} </h6>
         </div>
@@ -46,7 +60,7 @@ class Card extends Component{
         <div className="input-area">
           <input id= {this.props.ID} onChange={this.recordResponse}/>
           <br/>
-          <button className="submit" onClick ={this.checkAnswer}> Check Answer </button>
+          <button id="submit" className="submit" onClick ={this.checkAnswer}> Check Answer </button>
         </div>
         <div className="status">
           <h6> {this.props.Difficulty} </h6>

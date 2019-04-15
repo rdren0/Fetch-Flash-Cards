@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="container"
+>
+  <Card
+    Answer={400}
+    Difficulty="Easy"
+    ID={1}
+    Question="What status code indicates that there has been an error on the client side?"
+    completed={
+      Array [
+        2,
+        3,
+      ]
+    }
+    key="1"
+    status={false}
+  />
+  <Card
+    Answer={500}
+    Difficulty="Easy"
+    ID={2}
+    Question="What status code indicates that there has been an error on the server side?"
+    completed={
+      Array [
+        2,
+        3,
+      ]
+    }
+    key="2"
+    status={true}
+  />
+  <Card
+    Answer={300}
+    Difficulty="Easy"
+    ID={3}
+    Question="What status code indicates the fetch was successful but the data may have moved?"
+    completed={
+      Array [
+        2,
+        3,
+      ]
+    }
+    key="3"
+    status={true}
+  />
+</div>
+`;

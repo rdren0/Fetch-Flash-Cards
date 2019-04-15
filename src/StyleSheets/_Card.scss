@@ -1,0 +1,39 @@
+.card{
+  background-color: $cardBackground;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 4px 2px 31px -6px $shadow;
+  display: grid;
+  grid-template-rows: 3fr 2fr 40px;
+  margin: 10px;
+  max-height: 265px;
+  max-width: 250px;
+  min-height: 265px;
+  min-width: 250px;
+  padding: 8px;
+  &:hover{
+    background-color: lighten($shadow, 15%);
+    box-shadow: 2px 7px 29px 1px #000000;
+
+  }
+}
+
+input{
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submit:hover{
+  background-color: $completeHover;
+}
+
+img{
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Answer{
+  font-weight: 600;
+  color: #FFF;
+}
