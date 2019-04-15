@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import Header from './Components/Header.js'
 import Container from './Components/Container.js';
-import Card from './Components/Card.js';
 import data from './data.js';
 import loading from './Images/loading.svg';
-import './App.scss';
 
 
 export class App extends Component {
   constructor() {
     super();
     this.state = {
-      questions: data.flashCards,
+      questions: [],
       completed: [],
       selection: [],
       loading: true
@@ -51,16 +49,16 @@ export class App extends Component {
 
   addCompleted = (ID, status) => {
     let newState;
-    if (this.state.completed.includes(ID) && status === false) {
+    if (this.state.completed.includes(ID) && status === true) {
       newState = this.state.completed.filter(card => card !== ID);
     } else{
       newState = [...this.state.completed, ID];
-    }
     this.setState({
       completed : newState
     }, () => {
       this.saveToStorage();
     });
+    }
   }
 
 
@@ -70,14 +68,18 @@ export class App extends Component {
 
 
   componentDidMount() {
+    fetch("https://fe-apps.herokuapp.com/api/v1/memoize/1901/rachael-fetch/flashcards")
+    .then(response => response.json())
+    .then(questions => this.setState({questions: questions.flashCards}))
+    .catch(err => {
+      throw new Error(err);
+    })
     const completedCards = JSON.parse(localStorage.getItem('Completed')) || [];
       this.setState({
         completed: completedCards,
         loading: false
-
       });
   }
-  
   render() {
      if(this.state.loading){
       return(
@@ -86,18 +88,16 @@ export class App extends Component {
           <p>
             Loading flashCards...          
           </p>
-        </div>
-
-      )
+        </div>)
     }else{
       return(
         <div>
           <Header/>
           <div className="button-holder">
-            <button onClick={this.showAll}>All</button>
-            <button onClick={this.sortCards}>Easy</button>
-            <button onClick={this.sortCards}>Medium</button>
-            <button onClick={this.sortCards}>Hard</button>
+            <button id= "showAll" onClick={this.showAll}>All</button>
+            <button id="easy"onClick={this.sortCards}>Easy</button>
+            <button id="medium" onClick={this.sortCards}>Medium</button>
+            <button id="hard" onClick={this.sortCards}>Hard</button>
             <button className= "completed-button" onClick={this.onlyCompleted}>Completed</button>
           </div>
           <hr/>

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="question-area"
+  >
+    <h2>
+       
+      What function directly follows our fetch URL line?
+       
+    </h2>
+  </div>
+  <div
+    className="input-area"
+  >
+    <input
+      id={6}
+      onChange={[Function]}
+    />
+    <br />
+    <button
+      className="submit"
+      id="submit"
+      onClick={[Function]}
+    >
+       Check Answer 
+    </button>
+  </div>
+  <div
+    className="status"
+  >
+    <h6>
+       
+      Easy
+       
+    </h6>
+  </div>
+</div>
+`;
+
+exports[`Card should match the snapshot with all data passed in correctly 2`] = `
+<div
+  className="card"
+>
+  <div
+    className="question-area"
+  >
+    <h2>
+       
+      What function directly follows our fetch URL line?
+       
+    </h2>
+    <h2
+      className="Answer"
+    >
+       
+      .then()
+       
+    </h2>
+  </div>
+  <img
+    alt="Green check mark for completion"
+    src="completed.svg"
+  />
+  <div
+    className="status"
+  >
+    <h6>
+       
+      Easy
+       
+    </h6>
+  </div>
+</div>
+`;
+
+exports[`Card should only show the guess side on uncompleted cards 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="question-area"
+  >
+    <h2>
+       
+       
+    </h2>
+    <h2
+      className="Answer"
+    >
+       
+       
+    </h2>
+  </div>
+  <img
+    alt="Green check mark for completion"
+    src="completed.svg"
+  />
+  <div
+    className="status"
+  >
+    <h6>
+       
+       
+    </h6>
+  </div>
+</div>
+`;

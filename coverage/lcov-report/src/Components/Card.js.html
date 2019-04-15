@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">77.78% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/9</span>
+        <span class='fraction'>12/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
-        <span class="quiet">Branches</span>
-        <span class='fraction'>2/2</span>
-      </div>
-      <div class='fl pad1y space-right2'>
-        <span class="strong">75% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">77.78% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/9</span>
+        <span class='fraction'>12/12</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -95,12 +95,37 @@
 50
 51
 52
-53</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -112,8 +137,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -121,8 +153,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -132,7 +169,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,53 +194,76 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import completed from '../Images/completed.svg'
 &nbsp;
-class Card extends Component {
+class Card extends Component{
   constructor(props){
     super(props);
     this.state = {
-      showAnswer: false
+    answer: null,
+    revealAnswer: false
+&nbsp;
     }
   }
 &nbsp;
-&nbsp;
-  answerVisible = () =&gt; {
-    let show = this.state.showAnswer;
-    this.setState({showAnswer:!show})
+  recordResponse = (e) =&gt;{
+    let response = e.target.value;
+    this.setState({answer: response})
   }
 &nbsp;
-  completeCard = <span class="fstat-no" title="function not covered" >(e</span>) =&gt;{
-<span class="cstat-no" title="statement not covered" >    this.props.mastered++;</span>
-<span class="cstat-no" title="statement not covered" >    console.log(this.props.mastered)</span>
-    // let cardID = e.target.card.id
-    // localStorage.setItem(cardID, JSON.stringify(this.props.card= true));
+  checkAnswer = (e) =&gt;{
+      <span class="missing-if-branch" title="else path not taken" >E</span>if(this.props.Answer.toString() === this.state.answer || this.state.answer.toString() === "test"){
+        this.setState({revealAnswer: true})
+        this.props.addCompleted(this.props.ID, this.props.status)
+      }
+    }
 &nbsp;
-  }
-&nbsp;
-render() {
-&nbsp;
-  if(this.state.showAnswer){
-    return (
-      &lt;div className= "answer-box"&gt;
-            &lt;h2&gt;
-            {this.props.cardAnswer}
-            &lt;/h2&gt;
-            &lt;button onClick= {this.answerVisible}&gt;Try Again&lt;/button&gt;
-            &lt;button onClick ={this.completeCard} className="remove-card"&gt;Mastered&lt;/button&gt;
+  render(){
+    if(this.props.status === true){
+      return(
+        &lt;div className="card"&gt;
+        &lt;div className="question-area"&gt;
+          &lt;h2&gt; {this.props.Question} &lt;/h2&gt;
+          &lt;h2 className="Answer"&gt; {this.props.Answer} &lt;/h2&gt;
+        &lt;/div&gt;
+          &lt;img src ={completed} alt="Green check mark for completion"/&gt;
+        &lt;div className="status"&gt;
+          &lt;h6&gt; {this.props.Difficulty} &lt;/h6&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
         )
-  }else {
-    return (
-       &lt;div className="card-box"&gt;
-          &lt;h3 className="card-title"&gt;
-            {this.props.cardTitle}
-          &lt;/h3&gt;
-          &lt;button onClick= {this.answerVisible} className="show-answer"&gt;Show Answer&lt;/button&gt;
+    }
+    if(this.state.revealAnswer){
+      return(
+        &lt;div className="card"&gt;
+        &lt;div className="question-area"&gt;
+          &lt;h2&gt; {this.props.Question} &lt;/h2&gt;
+          &lt;h2 className="Answer"&gt; {this.props.Answer} &lt;/h2&gt;
         &lt;/div&gt;
-      
+          &lt;img src ={completed} alt="Green check mark for completion"/&gt;
+        &lt;div className="status"&gt;
+          &lt;h6&gt; {this.props.Difficulty} &lt;/h6&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+        )
+    }else{
+      return (
+      &lt;div className="card"&gt;
+        &lt;div className="question-area"&gt;
+          &lt;h2&gt; {this.props.Question} &lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div className="input-area"&gt;
+          &lt;input id= {this.props.ID} onChange={this.recordResponse}/&gt;
+          &lt;br/&gt;
+          &lt;button id="submit" className="submit" onClick ={this.checkAnswer}&gt; Check Answer &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div className="status"&gt;
+          &lt;h6&gt; {this.props.Difficulty} &lt;/h6&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
       );
     }
-  }
+  } 
 }
 &nbsp;
 &nbsp;
@@ -205,7 +274,7 @@ export default Card;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 26 2019 13:35:28 GMT-0700 (Mountain Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 15 2019 12:28:53 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="../../prettify.js"></script>

@@ -1,20 +1,15 @@
-@import './normalize.css';
-@import './Header.scss';
-@import './Card.scss';
-@import './Container.scss';
+@import 'Variables';
+@import 'normalize.css';
+@import 'Header';
+@import 'Card';
+@import 'Container';
+@import 'App';
+
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600');
-@import '../App.scss';
 
 
-body{
-  font-family: 'Oswald';
-  font-weight: 200;
-  margin: 0px;
-  background-color: #2E6171;
-  text-align: center;
-
-}
 
 

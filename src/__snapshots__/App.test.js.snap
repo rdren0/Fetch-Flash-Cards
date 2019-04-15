@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot when loading data 1`] = `
+<div>
+  <img
+    alt="loading-icon"
+    className="App-loading"
+    src="loading.svg"
+  />
+  <p>
+    Loading flashCards...
+  </p>
+</div>
+`;
+
+exports[`App should match the snapshot with all data passed in correctly 1`] = `
+<div>
+  <Header />
+  <div
+    className="button-holder"
+  >
+    <button
+      id="showAll"
+      onClick={[Function]}
+    >
+      All
+    </button>
+    <button
+      id="easy"
+      onClick={[Function]}
+    >
+      Easy
+    </button>
+    <button
+      id="medium"
+      onClick={[Function]}
+    >
+      Medium
+    </button>
+    <button
+      id="hard"
+      onClick={[Function]}
+    >
+      Hard
+    </button>
+    <button
+      className="completed-button"
+      onClick={[Function]}
+    >
+      Completed
+    </button>
+  </div>
+  <hr />
+  <Container
+    addCompleted={[Function]}
+    completed={Array []}
+    data={Array []}
+  />
+</div>
+`;

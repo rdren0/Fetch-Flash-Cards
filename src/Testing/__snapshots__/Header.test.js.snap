@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    Make Fetch Happen
+  </h1>
+  <h3>
+     Fetch/Networks/Servers
+  </h3>
+</div>
+`;
