@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1555376115652" clover="3.2.0">
-  <project timestamp="1555376115652" name="All files">
-    <metrics statements="56" coveredstatements="48" conditionals="22" coveredconditionals="19" methods="27" coveredmethods="22" elements="105" coveredelements="89" complexity="0" loc="56" ncloc="56" packages="2" files="7" classes="7">
+<coverage generated="1555430146476" clover="3.2.0">
+  <project timestamp="1555430146476" name="All files">
+    <metrics statements="56" coveredstatements="51" conditionals="22" coveredconditionals="21" methods="27" coveredmethods="24" elements="105" coveredelements="96" complexity="0" loc="56" ncloc="56" packages="2" files="7" classes="7">
       <package name="src">
-        <metrics statements="30" coveredstatements="23" conditionals="8" coveredconditionals="7" methods="17" coveredmethods="12"/>
+        <metrics statements="30" coveredstatements="25" conditionals="8" coveredconditionals="7" methods="17" coveredmethods="14"/>
         <file name="App.js" path="/Users/rachaeldrennan/Projects/ModuleTwo/Memoize-Fetch/src/App.js">
-          <metrics statements="28" coveredstatements="21" conditionals="8" coveredconditionals="7" methods="17" coveredmethods="12"/>
-          <line num="10" count="10" type="stmt"/>
-          <line num="11" count="10" type="stmt"/>
+          <metrics statements="28" coveredstatements="23" conditionals="8" coveredconditionals="7" methods="17" coveredmethods="14"/>
+          <line num="10" count="12" type="stmt"/>
+          <line num="11" count="12" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
           <line num="22" count="3" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
@@ -25,15 +25,15 @@
           <line num="56" count="0" type="stmt"/>
           <line num="59" count="0" type="stmt"/>
           <line num="66" count="1" type="stmt"/>
-          <line num="71" count="11" type="stmt"/>
-          <line num="72" count="0" type="stmt"/>
+          <line num="71" count="15" type="stmt"/>
+          <line num="72" count="1" type="stmt"/>
           <line num="73" count="0" type="stmt"/>
-          <line num="75" count="0" type="stmt"/>
-          <line num="77" count="11" type="cond" truecount="2" falsecount="0"/>
-          <line num="78" count="11" type="stmt"/>
-          <line num="84" count="31" type="cond" truecount="2" falsecount="0"/>
-          <line num="85" count="11" type="stmt"/>
-          <line num="93" count="20" type="stmt"/>
+          <line num="75" count="1" type="stmt"/>
+          <line num="77" count="15" type="cond" truecount="2" falsecount="0"/>
+          <line num="78" count="15" type="stmt"/>
+          <line num="84" count="38" type="cond" truecount="2" falsecount="0"/>
+          <line num="85" count="14" type="stmt"/>
+          <line num="93" count="24" type="stmt"/>
         </file>
         <file name="data.js" path="/Users/rachaeldrennan/Projects/ModuleTwo/Memoize-Fetch/src/data.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -42,27 +42,27 @@
         </file>
       </package>
       <package name="src.Components">
-        <metrics statements="26" coveredstatements="25" conditionals="14" coveredconditionals="12" methods="10" coveredmethods="10"/>
+        <metrics statements="26" coveredstatements="26" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="10"/>
         <file name="Card.js" path="/Users/rachaeldrennan/Projects/ModuleTwo/Memoize-Fetch/src/Components/Card.js">
-          <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
-          <line num="6" count="6" type="stmt"/>
-          <line num="7" count="6" type="stmt"/>
+          <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="7" count="7" type="stmt"/>
           <line num="15" count="1" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
-          <line num="20" count="2" type="cond" truecount="3" falsecount="1"/>
+          <line num="20" count="4" type="cond" truecount="4" falsecount="0"/>
           <line num="21" count="2" type="stmt"/>
           <line num="22" count="2" type="stmt"/>
-          <line num="27" count="11" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="13" type="cond" truecount="2" falsecount="0"/>
           <line num="28" count="1" type="stmt"/>
-          <line num="41" count="10" type="cond" truecount="2" falsecount="0"/>
+          <line num="41" count="12" type="cond" truecount="2" falsecount="0"/>
           <line num="42" count="3" type="stmt"/>
-          <line num="55" count="7" type="stmt"/>
+          <line num="55" count="9" type="stmt"/>
         </file>
         <file name="Container.js" path="/Users/rachaeldrennan/Projects/ModuleTwo/Memoize-Fetch/src/Components/Container.js">
-          <metrics statements="11" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
-          <line num="8" count="4" type="stmt"/>
-          <line num="14" count="4" type="cond" truecount="1" falsecount="1"/>
-          <line num="15" count="0" type="stmt"/>
+          <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+          <line num="8" count="5" type="stmt"/>
+          <line num="14" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="15" count="1" type="stmt"/>
           <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
           <line num="18" count="3" type="stmt"/>
           <line num="19" count="9" type="cond" truecount="2" falsecount="0"/>
@@ -70,7 +70,7 @@
           <line num="22" count="3" type="stmt"/>
           <line num="24" count="9" type="stmt"/>
           <line num="36" count="1" type="stmt"/>
-          <line num="39" count="4" type="stmt"/>
+          <line num="39" count="5" type="stmt"/>
         </file>
         <file name="Fetch.js" path="/Users/rachaeldrennan/Projects/ModuleTwo/Memoize-Fetch/src/Components/Fetch.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

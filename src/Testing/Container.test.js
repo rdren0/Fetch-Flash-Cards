@@ -49,7 +49,13 @@ describe('Container', () => {
   });
 
   it('should render a Fetch Component if all cards completed', () => {
-     <Container
-      completed = {30}/>
+    let arr = []
+    for(let i =0; i <=30; i ++){
+        arr.push(i)
+    }
+    wrapper = shallow(<Container
+      completed = {arr}/>);
+    expect(wrapper).toMatchSnapshot();
+
   });
 });
