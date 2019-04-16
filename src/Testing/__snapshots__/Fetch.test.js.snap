@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetch should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="fetch"
+>
+  <h1>
+    You answered every card correctly!
+  </h1>
+  <br />
+  <iframe
+    allowFullScreen={true}
+    class="giphy-embed"
+    frameBorder="0"
+    height="270"
+    src="https://giphy.com/embed/xlYKItjhiDsY"
+    width="480"
+  />
+</div>
+`;

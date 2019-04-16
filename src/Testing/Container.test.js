@@ -47,4 +47,15 @@ describe('Container', () => {
      <Container
       data = {mockData2}/>
   });
+
+  it('should render a Fetch Component if all cards completed', () => {
+    let arr = []
+    for(let i =0; i <=30; i ++){
+        arr.push(i)
+    }
+    wrapper = shallow(<Container
+      completed = {arr}/>);
+    expect(wrapper).toMatchSnapshot();
+
+  });
 });

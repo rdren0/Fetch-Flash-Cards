@@ -56,11 +56,17 @@ describe('Card', () => {
     expect(wrapper.state("answer")).toEqual("test")
   });
 
-  it('should check if the answer is correct', () =>{
+  it('should check if the answer is correct with correct answer', () =>{
     wrapper.setState({ answer: "test" });
     wrapper.find('#submit').simulate('click');
     wrapper.instance().checkAnswer(testEvent)
     expect(wrapper.state("revealAnswer")).toEqual(true);
+  });
+  it('should check if the answer is correct with wrong answer', () =>{
+    wrapper.setState({ answer: ".error()" });
+    wrapper.find('#submit').simulate('click');
+    wrapper.instance().checkAnswer(".error()")
+    expect(wrapper.state("revealAnswer")).toEqual(false);
   });
 
 
