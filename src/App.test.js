@@ -4,14 +4,13 @@ import App from './App';
 import { shallow } from 'enzyme';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
 configure({ adapter: new Adapter() });
 
 const setStorage = jest.spyOn(Storage.prototype, 'setItem');
 const getStorage = jest.spyOn(Storage.prototype, 'getItem');
-
-const testEasy =  {target: { innerText: 'easy' }} 
-const testCompleted = [8,9]
+const testEasy =  {target: { innerText: 'easy' }} ;
+const testCompleted = [8,9];
+const fetchSpy = jest.spyOn(global, 'fetch')
 
 
 const mockCards = [{
@@ -86,16 +85,19 @@ describe('App', () => {
     wrapper.setState({ completed: testCompleted });
     wrapper.instance().addCompleted(8, true);
     expect(wrapper.state("completed")).toEqual([8,9])
-
   });
 
-  it('should add card to completed', () => {
+  it('should save to storage', () => {
     wrapper.instance().saveToStorage();
     expect(setStorage).toHaveBeenCalled();
   });
 
-  it.skip('should fetch data', () =>{
-    expect(componentDidMount).toHaveBeenCalled();
+  it('should fetch data', () =>{
+    wrapper.instance().componentDidMount();
+    expect(fetchSpy).toHaveBeenCalled();
+    expect(getStorage).toHaveBeenCalled();
+    expect(wrapper.state("completed")).toEqual([])
+
   })
 
 })

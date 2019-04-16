@@ -47,4 +47,9 @@ describe('Container', () => {
      <Container
       data = {mockData2}/>
   });
+
+  it('should render a Fetch Component if all cards completed', () => {
+     <Container
+      completed = {30}/>
+  });
 });
