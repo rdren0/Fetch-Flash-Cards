@@ -1,21 +1,21 @@
 # Memoize, a flash card App to learn about Fetch
 ### By Rachael Drenann
 
-In the project directory, you can run:
+## To begin:
+In your terminal:
 
-### `npm start`
+```bash
+npm  install
+```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm start
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
+Go to `http://localhost:3000/` in your browser to view the code running in the browser.
 
 
-This was a solo porject where we needed to use react, JSX, Sass/Scss, local storage, and Enzyme/Jest to demonstrate our mastery and understanding of the framework React
+This was a solo project where we needed to use react, JSX, Sass/Scss, local storage, and Enzyme/Jest to demonstrate our mastery and understanding of the framework React
 
 ## What I gained from this project
 In making this site, I gained a much better understanding on testing specifically. I learned what needs to be tested and how to ensure your app is working as you would expect.
