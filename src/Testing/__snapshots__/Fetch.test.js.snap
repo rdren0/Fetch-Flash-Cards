@@ -14,6 +14,7 @@ exports[`Fetch should match the snapshot with all data passed in correctly 1`] =
     frameBorder="0"
     height="270"
     src="https://giphy.com/embed/xlYKItjhiDsY"
+    title="Mean Girls Gif"
     width="480"
   />
 </div>

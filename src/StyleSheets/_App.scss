@@ -1,17 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/*---Animation when fetch is delayed----*/
 .App-loading{
   animation: App-loading-spin infinite 10s linear;
   height: 40vmin;
   margin-top: 50px;
   pointer-events: none;
-
 }
 
 @keyframes App-loading-spin {
@@ -58,7 +50,7 @@ hr{
   margin-bottom: 0px;
   margin-top: 20px;
 }
-
+/*---NavBar----*/
 .button-holder{
   background-color: #556F7A;
   border-radius: 15px;
@@ -90,6 +82,8 @@ button{
     background-color: $completeHover;
   }
 }
+
+/*----------------------*/
 
 .bulb{
   height: 150px;

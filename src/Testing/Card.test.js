@@ -39,6 +39,12 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should have the proper defualt state', () => {
+    expect(wrapper.state('answer')).toEqual(null);
+    expect(wrapper.state('revealAnswer')).toEqual(false);  
+  });
+
+
   it('should match the snapshot with all data passed in correctly', () => {
     wrapper.setState({ revealAnswer: true });
     expect(wrapper).toMatchSnapshot();

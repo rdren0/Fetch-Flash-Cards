@@ -59,6 +59,14 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+   it('should have the proper defualt state', () => {
+    expect(wrapper.state('questions')).toEqual([]);
+    expect(wrapper.state('completed')).toEqual([]);
+    expect(wrapper.state('selection')).toEqual([]);
+    expect(wrapper.state('loading')).toEqual(false);
+  });
+
+
   it('should show all cards expected completed ones', () =>{
       wrapper.setState({ questions: mockCards });
       wrapper.setState({ completed: [8,9] });
