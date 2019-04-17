@@ -7,12 +7,18 @@ This was a solo porject where we needed to use react, JSX, Sass/Scss, local stor
 ## What I gained from this project
 In making this site, I gained a much better understanding on testing specifically. I learned what needs to be tested and how to ensure your app is working as you would expect.
 ### Screenshots
-Favoriting a card and refreshing the page to check persistence:
+# Favoriting a card and refreshing the page to check persistence:
+
+
 ![Memoize-Fetch](favorites.gif)
-Toggling through each category:
+# Toggling through each category:
+
+
 ![Memoize-Fetch](Toggle.gif)
-What you see once you complete all cards, requirement changed to 3 cards for this example:
-![Memoize-Fetch](Fetch.gif))
+# What you see once you complete all cards, requirement changed to 3 cards for this example:
+
+
+![Memoize-Fetch](Fetch.gif)
 
 In the project directory, you can run:
 
