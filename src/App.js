@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Components/Header.js'
 import Container from './Components/Container.js';
-import data from './data.js';
 import loading from './Images/loading.svg';
 
 
@@ -46,7 +45,6 @@ export class App extends Component {
     }); 
   }
 
-
   addCompleted = (ID, status) => {
     let newState;
     if (this.state.completed.includes(ID) && status === true) {
@@ -60,7 +58,6 @@ export class App extends Component {
     });
     }
   }
-
 
   saveToStorage = () => {
     localStorage.setItem('Completed', JSON.stringify(this.state.completed));
