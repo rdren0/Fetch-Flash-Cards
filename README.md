@@ -19,7 +19,7 @@ This was a solo project where we needed to use react, JSX, Sass/Scss, local stor
 
 ## What I gained from this project
 In making this site, I gained a much better understanding on testing specifically. I learned what needs to be tested and how to ensure your app is working as you would expect.
-### Screenshots
+### Examples
 ## Favoriting a card and refreshing the page to check persistence:
 
 
