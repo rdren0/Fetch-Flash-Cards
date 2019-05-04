@@ -1,4 +1,4 @@
-# Memoize, a flash card App to learn about Fetch
+# Fetch Flash Cards, an app to learn about Fetch!
 ### By Rachael Drenann
 
 ## To begin:
